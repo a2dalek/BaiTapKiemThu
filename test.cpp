@@ -47,6 +47,10 @@ std::vector<testcase> kiem_thu_bang_gia_tri {
     {11, 11.5, -3, -1},
 };
 
+std::vector<testcase> kiem_thu_do_phu_c2 {
+    {1, -1.0, 3, -1}, {2, 4.0, 3, -1}, {3, 9.0, 2, 2}, {4, 7.0, 1, 1}, {5, 5.0, 1, 0}
+};
+
 int main() {
     std::cout<< "Kiem thu phan hoach tuong duong" << std::endl;
 
@@ -58,5 +62,11 @@ int main() {
 
     for (int i=0;i<kiem_thu_bang_gia_tri.size();i++) {
         kiem_thu_bang_gia_tri[i].check();
+    }
+
+    std::cout<< "Kiem thu do phu c2" << std::endl;
+
+    for (int i=0;i<kiem_thu_do_phu_c2.size();i++) {
+        kiem_thu_do_phu_c2[i].check();
     }
 }
